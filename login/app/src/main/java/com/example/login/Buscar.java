@@ -14,7 +14,7 @@ public class Buscar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar);
 
-        final Button buscar= (Button) findViewById(R.id.);
+        final Button buscar= (Button) findViewById(R.id.Btn_iniciar);
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
