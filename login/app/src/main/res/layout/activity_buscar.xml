@@ -3,12 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Buscar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BUSQUEDA" />
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ImageView
         android:layout_width="415dp"
-        android:layout_height="200dp"
+        android:layout_height="280dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:src="@drawable/mapa" />
@@ -16,56 +28,77 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ruta"
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
+
         <TextView
-            android:id="@+id/TextV_nombre"
+            android:id="@+id/TextV_ruta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="parada de inicio"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/TextV_parada_ini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="paradas"
-            android:textSize="22sp"/>
+            android:text="parada  final"
+            android:textSize="22sp" />
+
         <TextView
-            android:id="@+id/TextV_"
+            android:id="@+id/TextV_parada_fin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="unidades disponibles"
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
+
         <TextView
-            android:id="@+id/TextV_password"
+            android:id="@+id/TextV_ud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
     </LinearLayout>
-
-
 
 
 </LinearLayout>

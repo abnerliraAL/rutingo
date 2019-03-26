@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tv_registrar; Button btn__buscar;
+    TextView tv_registrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intentReg);
 
 
+     Button btn = (Button) findViewById(R.id.Btn_iniciar);
+     btn.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
 
+            Intent intent = new Intent(v.getContext(), Index.class);
+            startActivityForResult(intent, 0);
+         }
+     });
 
             }
         });
